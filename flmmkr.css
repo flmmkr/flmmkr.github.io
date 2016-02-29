@@ -6,15 +6,16 @@ body {
 }
 
 .title {
-  width:300px;
-  height:200px;
   position:absolute;
   left:50%;
   top:50%;
+  width:300px;
+  height:200px;
   margin:-100px 0 0 -150px;
   text-align: center;
   vertical-align: central;
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  white-space: nowrap;
 }
 
 .flmmkr {
@@ -29,6 +30,26 @@ body {
 
 .tagline {
   text-align: center;
-  fot-size: 20px;
+  font-size: 20px;
   font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .title {
+    width:480px;
+    height:200px;
+    margin:-240px 0 0 -240px;
+  }
+  
+  .flmmkr {
+    font-size: 90px;
+  }
+  
+  .net {
+    font-size: 70px;
+  }
+  
+  .tagline {
+    font-size: 40px;
+  }
 }
